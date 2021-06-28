@@ -1,10 +1,16 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+import { UploadWrapperComponent } from './upload-wrapper/upload-wrapper.component';
 
-const routes: Routes = [];
+const routes: Routes = [
+  {
+    path: '',
+    component: UploadWrapperComponent,
+  },
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {}
